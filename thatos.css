@@ -1,0 +1,237 @@
+body {
+    font-family: Arial;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+}
+
+#navbar {
+    margin-top: -100px;
+    color: rgba(196, 16, 16, 0.877);
+    height: 50px;
+    position: fixed;
+}
+
+#navbar ul {
+    margin-left: 500px;
+    padding: 0;
+    margin-top: 50%;
+    padding-left: 70%;
+    margin-right: 400px;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+.head,
+.main,
+.foot {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    margin: 2em;
+}
+
+.my-nav {
+    list-style: none;
+    text-align: center;
+    margin-top: 2em;
+    margin: 2em;
+    padding: 0;
+}
+
+.my-nav li {
+    display: inline;
+    margin-left: 7%;
+    margin-right: 7%;
+    cursor: pointer;
+}
+
+.my-nav li:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.title {
+    text-align: center;
+}
+
+.image-holder {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.image-holder img {
+    width: 50%;
+}
+
+.about {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+
+/* NOTE: I only tested this on Google Chrome.*/
+
+body {
+    background: #825fa1;
+}
+
+#home {
+    padding-bottom: 15%;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 10%;
+}
+
+.container h1:nth-child(1) {
+    color: #dae1e7;
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40, end) forwards;
+}
+
+.container h1:nth-child(2) {
+    opacity: 0;
+    font-family: "Work Sans", sans-serif;
+    margin: 0 auto auto auto;
+    background: linear-gradient(to right, #1418eb, #1cb41c, #e7e5e5);
+    font-weight: 800;
+    font-size: 100px;
+    width: 430px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+    0% {
+        background-position: 0 0;
+        opacity: 0;
+        width: 0;
+    }
+    1% {
+        background-position: 0 0;
+        opacity: 1;
+        border-right: 1px solid orange;
+    }
+    50% {
+        background-position: 150px 0;
+        opacity: 1;
+        border-right: 1px solid orange;
+    }
+    100% {
+        background-position: 400px 0;
+        opacity: 1;
+        border-right: 1px solid orange;
+    }
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    1%,
+    99% {
+        border-right: 1px solid orange;
+    }
+    100% {
+        border-right: none;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.intro-desc {
+    color: #65dd6b;
+    font-size: 18px;
+    text-align: center;
+    max-width: unset;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 40px;
+}
+
+.intro-subtitle {
+    color: #0b3c3f;
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.intro-contact {
+    font-size: 16px;
+    align-self: center;
+    margin-left: 30%;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.MuiSvgIcon-colorPrimary {
+    color: #9c9fb4;
+}
+
+.MuiSvgIcon-colorSecondary {
+    color: #f50057;
+}
+
+.MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.MuiSvgIcon-colorError {
+    color: #f44336;
+}
+
+.MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+}
+
+.MuiSvgIcon-fontSizeSmall {
+    font-size: 2rem;
+}
+
+.MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+}
